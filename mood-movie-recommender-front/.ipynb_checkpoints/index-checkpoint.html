@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood-Based Movie Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+    <nav style="background:#111; padding: 15px 0;">
+      <ul style="list-style:none; display:flex; justify-content:center; gap:20px; margin:0; padding:0;">
+        <li><a class="nav-btn" href="index.html">Home</a></li>
+        <li><a class="nav-btn" href="about.html">About</a></li>
+        <li><a class="nav-btn" href="how-it-works.html">How It Works</a></li>
+        <li><a class="nav-btn" href="explore.html">Explore</a></li>
+        <li><a class="nav-btn" href="reviews.html">Reviews</a></li>
+        <li><a class="nav-btn" href="mood-journal.html">Mood Journal</a></li>
+        <li><a class="nav-btn" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Mood Movie Recommender</h1>
+  </header>
+
+  <section class="mood-select">
+    <h2 class="glow-text">Select Your Mood</h2>
+    <div class="buttons">
+      <button data-mood="happy">Happy</button>
+      <button data-mood="sad">Sad</button>
+      <button data-mood="excited">Excited</button>
+      <button data-mood="angry">Angry</button>
+      <button data-mood="chill">Chill</button>
+    </div>
+  </section>
+
+  <section class="recommendations" id="recommendations">
+    <h2>Your Movie Recommendations Will Appear Here</h2>
+  </section>
+
+  <!-- ✅ Correct placement of trailer modal -->
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <iframe 
+        id="trailerFrame"
+        width="100%" 
+        height="400" 
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align: center; padding: 15px 0; background: #111; color: lime;">Made with 💚 by Samuel</p>
+  </footer>
+
+  <!-- ✅ Link to your JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

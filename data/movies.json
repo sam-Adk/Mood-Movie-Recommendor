@@ -1,0 +1,7 @@
+{
+  "happy": ["Sing", "Yes Man", "Paddington 2"],
+  "sad": ["Inside Out", "A Silent Voice", "The Fault in Our Stars"],
+  "romantic": ["La La Land", "The Notebook", "Titanic"],
+  "angry": ["John Wick", "The Dark Knight", "Gladiator"],
+  "chill": ["Chef", "Soul", "The Grand Budapest Hotel"]
+}
