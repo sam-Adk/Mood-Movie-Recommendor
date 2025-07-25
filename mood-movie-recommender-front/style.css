@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-color: #0e0e0e;
   margin: 0;
   text-align: center;
@@ -13,6 +14,16 @@ body {
 header {
   padding: 20px;
   background-color: #1a1a1a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-btn {
@@ -26,6 +37,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-btn:hover {
@@ -33,10 +45,18 @@ header {
   text-shadow: 0 0 5px greenyellow;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
 .buttons button {
   padding: 10px 20px;
   background-color: #444;
-  color: rgb(2, 42, 2);
+  color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -93,17 +113,6 @@ button:hover {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-
-@media screen and (max-width: 768px) {
-  .mood-select .buttons button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  .container {
-    padding: 10px;
-  }
 }
 
 .glow-text {
@@ -181,6 +190,45 @@ button:hover {
   color: #00ffaa;
   text-shadow: 0 0 5px #00ffaa;
 }
+
+/* ✅ Responsive Fixes */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .nav-btn {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .recommendations {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+  }
+}
+
 
 
 
